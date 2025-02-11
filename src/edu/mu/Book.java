@@ -60,8 +60,21 @@ public class Book {
 	public String toString() {
 		return "Book [title=" + title + ", author=" + author + ", ISBN=" + ISBN + ", price=" + price + "]";
 	}
-	
-	
-	
 
-}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		
+		if (obj instanceof Book) {
+			Book other = (Book) obj;
+			return this.ISBN.equals(other.ISBN);
+		}
+		return false;
+	}
+	
+		
+	}
+
+
