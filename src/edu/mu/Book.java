@@ -5,7 +5,15 @@ public class Book {
 	private String title;
 	private String author;
 	private String ISBN;
+	private double price;
 	
+	public Book( ) {
+		this.title = "Unknown";
+		this.author = "Unknown";
+		this.ISBN = "Unknown";
+		this.price = 0.0;
+	}
+
 	
 	public String getTitle() {
 		return title;
@@ -31,13 +39,7 @@ public class Book {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	private double price;
 	
-	public Book( ) {
-		this.title = "Unknown";
-		this.author = "Unknown";
-		this.ISBN = "Unknown";
-		this.price = 0.0;
-	}
+	
 
 }
