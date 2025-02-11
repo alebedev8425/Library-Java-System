@@ -22,6 +22,14 @@ public class Book {
 		
 	}
 
+	public Book(Book otherBook) {
+		if (otherBook != null) {
+			this.title = otherBook.title;
+			this.author = otherBook.author;
+			this.ISBN = otherBook.ISBN;
+			this.price = otherBook.price;
+		}
+	}
 	
 	public String getTitle() {
 		return title;
